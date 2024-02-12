@@ -1,0 +1,10 @@
+To initialize Zipkin Server:
+zipkin: https://hub.docker.com/r/openzipkin/zipkin
+
+>> docker run -d -p 9411:9411 openzipkin/zipkin --working
+
+or
+Another method via jar:
+>> curl -sSL https://zipkin.io/quickstart.sh | bash -s io.zipkin:zipkin-server:LATEST:slim zipkin.jar
+>> java -jar zipkin.jar
+-- this is showing some java version error
