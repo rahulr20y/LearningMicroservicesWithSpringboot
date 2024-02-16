@@ -23,10 +23,24 @@ APIs for Employee service:
 http://localhost:8082/employee/department/2
 http://localhost:8082/employee
 
+payload:
+{
+  "id":2,
+  "departmentId":1,
+  "name":"SA",
+  "age":20,
+  "position":"SDE-2"
+}
+
 APIs for department service:
 http://localhost:8081/department
 http://localhost:8081/department/1
 
+payload:
+{
+  "id":2,
+  "name":"IT"
+}
 
 APIs for gateway:
 http://localhost:8060
